@@ -1,5 +1,8 @@
 package com.example.trackitbackend.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,6 +15,8 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "users")
 public class User {
 
 	String id;
